@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       td{
+        width:100px;
+       }
+     </style>
+</head>
+
+<body>
+    <button onclick="add()">Add item</button>
+    <table border="1px" cellspacing="0">
+       <tbody id="a">
+        <tr>
+            <th>Item</td>
+            <th>Price</td>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Abc</td>
+            <td>10000</td>
+            <td><button onclick="edit(this)">Edit</button><button onclick="del(this)">Delete</button></td>
+
+        </tr>
+       </tbody>
+        <script>
+              var bdy=document.getElementById("a")
+              function add()
+              {
+                  var row=bdy.insertRow();
+                  var a=row.insertCell(0);
+                  var b=row.insertCell(1);
+                  var c=row.insertCell(2);
+                  a.innerHTML= '<input type="text">'
+                  b.innerHTML='<input type="text">'
+                  c.innerHTML='<button onclick="save(this)">Save</button><button onclick="edit(this)">Edit</button>'
+              }
+              function del(row)
+              {
+                  console.log(row);
+                  var a=row.parentNode.parentNode;
+                  console.log(a)
+                  bdy.removeChild(a);
+              }
+              function edit(rowe)
+              {
+                 console.log(rowe)
+                 var row= rowe.parentNode.parentNode;
+                 console.log(row);
+                 var col=row.getElementsByTagName("td")
+                 console.log(col)
+                 for(i=0;i<col.length-1;i++)
+                 {
+                    var inp=document.createElement("input");
+                    inp.type="text";
+                    inp.value=col[i].innerText;
+                    console.log(inp);
+                   col[i].innerText = "";
+                   col[i].appendChild(inp);
+              }
+                    rowe.innerHTML = "Save";
+                    rowe.setAttribute("onclick", "saveEdit(this)");
+              }
+        </script>
+    </table>
+</body>
+</html>

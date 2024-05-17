@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <style>
+        #parent
+        {
+          width:500px;
+          height: 600px;
+          background-color: white;
+          border-radius: 15px;
+          box-shadow: 2px 2px 10px  rgb(187, 186, 186);
+          margin-left: 600px;
+          margin-top: 150px;
+          padding-left: 10px;
+          padding-top: 5px;
+        }
+        .in{
+            width: 95%;
+            margin-top: 5px;
+            border-radius: 5px;
+            height: 20px;
+            border: 2px solid black;
+        }
+        button{
+            background-color: green;
+            color: white;
+            width: 95%;
+            padding: 8px 50px;
+            border-radius: 15px;
+            /* height: 50px; */
+            margin-top: 10px;
+            border: 2px solid green;
+        }
+        p
+        {
+            margin-top:5px;
+            margin-bottom: 0px;
+        }
+        input[type="checkbox"]
+        {
+             margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+          <h1>Form Validation</h1>
+          <label><b>Name(8-50 characters):</b></label>
+          <input type="text" id="name" class="in">
+          <p id="n"></p>
+          <label><b>Email:</b></label>
+          <input type="email" id="mail" required class="in">
+          <p id="m"></p>
+          <label><b>Phone number(10 digits):</b></label>
+          <input type="number" id="num" class="in">
+          <p id="p"></p>
+          <label><b>Password:(atleast 8 characters containing uppercase,lowercase and numbers)</b></label>
+          <input type="password" id="pass" class="in">
+          <p id="word"></p>
+          <label><b>Gender:</b></label>
+          Male<input type="radio" name="gender" id="male">
+          Female<input type="radio" name="gender" id="female"><br>
+          <label><b>Courses:</b></label>
+          <input type="checkbox">HTML
+          <input type="checkbox">CSS
+          <input type="checkbox">Javascript
+          <input type="checkbox">BootStrap<br>
+          <label><b>Address:</b></label><br>
+          <textarea></textarea>
+
+          <button onclick="check()">Submit</button>
+          
+
+    </div>
+    <script>
+            function check()
+            {
+                // document.getElementById("parent").style.height="450px";
+                //name
+
+            var name=document.getElementById("name").value;
+            if(name=="")
+            {
+                document.getElementById("n").innerText="Name is required";
+                document.getElementById("n").style.color="red";
+            }
+            else if((name.length<8)||(name.length>50))
+            {
+                document.getElementById("n").innerText="8-50 characters ";
+                document.getElementById("n").style.color="red";
+            }
+            else{
+                document.getElementById("n").innerText=" ";
+
+            }
+
+            //email
+
+            var mail=document.getElementById("mail").value;
+            if(mail=="")
+            {
+                document.getElementById("m").innerText="Must enter the email";
+                document.getElementById("m").style.color="red";
+
+            }
+            else{
+                document.getElementById("m").innerText=" ";
+
+            }
+
+            //phone number
+
+            var number=document.getElementById("num").value;
+            if(number=="")
+            {
+                document.getElementById("p").innerText="Number is required";
+                document.getElementById("p").style.color="red";
+            }
+            
+            else if(number.length<10||number.length>10)
+            {
+                document.getElementById("p").innerText="Number must be 10 digits";
+                document.getElementById("p").style.color="red";
+            }
+            else{
+                document.getElementById("p").innerText=" ";
+
+            }
+
+            //password
+
+            var password=document.getElementById("pass").value;
+            var values=/[0-9]/g;
+            var small_letters=/[a-z]/g;
+            var capital_letters=/[A-Z]/g;
+            
+            // console.log(password)
+             if(password.match(values)&&password.match(small_letters)&&password.match(capital_letters))
+             {
+                 document.getElementById("word").innerText="";
+
+             }
+             else {
+                document.getElementById("word").innerText="Password must contains capital letters,small letters and numbers";
+                document.getElementById("word").style.color="red";
+                 }
+             if (password.length<8){
+                   document.getElementById("word").innerText="Must have 8 characters";
+             }   
+
+             //radio
+
+             var a=document.getElementById("female").value;
+             console.log(a)
+            
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter user Name</label>
+    <input type="text" id="h"><br>
+    <button type="button" onclick="fun()">Submit</button>
+    <script>
+        function fun(){
+            let a=document.getElementById("h").value;
+            if(a.length<=0){
+                alert("Must be Entered")
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
+

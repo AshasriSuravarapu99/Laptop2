@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Bootstrap/bootstrapv5.3/css/bootstrap.min.css">
+    <script src="../../Bootstrap/bootstrapv5.3/js/bootstrap.bundle.min.js"></script>
+    <title>Table3</title>
+</head>
+<body>
+    <table class="table table-bordered" border="2px">
+        <tr>
+          <td  class="a"></td>
+          <td class="a"></td>
+          <td  class="a"></td>
+        </tr>
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+    </table>
+    <script>
+        var a=["Ashasri","Bhagya","Ganga","Varshi","Vishu","Asmitha","Harini","Jyothi","Sarika"];
+        var c=["green","red","blue","orange","yellow","pink","aqua","black","lightblue"];
+        console.log(a);
+        var d=document.getElementsByClassName("a");
+        for(let i=0;i<a.length;i++)
+        {
+           
+            d[i].style.backgroundColor=c[i];
+            d[i].innerText=a[i];
+            d[i].style.color="white";
+        }
+        
+    </script>
+</body>
+</html>

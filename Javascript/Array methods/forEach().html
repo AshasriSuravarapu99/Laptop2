@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach method</title>
+</head>
+<body>
+    <h1>forEach() method in array</h1>
+    <p>It doesn't create a new array, it returns the value after each iteration.That means it updates the array</p>
+    <p></p>
+    <script>
+        let salaries=[40000,30000,55000];
+        //before salaries
+        console.log("Before")
+        console.log(salaries)
+        //arrow function
+        salaries.forEach((amount,index)=>
+        {
+            let hike=amount/10;
+            console.log("Hike is")
+            console.log(hike);
+            salaries[index]=amount+hike;
+        }
+        )
+        //after salaries
+        console.log("after")
+        console.log(salaries)
+
+        //anonymus function
+        let a=[2,4,5,6,7]
+        console.log(a)
+        a.forEach(function(ele,index){
+            a[index]=ele-1;
+        })
+        console.log(a)
+    </script>
+</body>
+</html>

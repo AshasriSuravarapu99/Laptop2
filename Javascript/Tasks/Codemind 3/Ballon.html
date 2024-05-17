@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballon task</title>
+</head>
+<body>
+    <img src="empty ballon.jpg" width="200px" height="auto" onmouseover="ballon()" id="a" onmouseout="document.getElementById('a').src='empty ballon.jpg' ">
+    <img src="cake1.jpg" width="200px" height="auto" onmouseover="cake()" id="b" onmouseout="document.getElementById('b').src='cake1.jpg' ">
+
+    <script>
+        function ballon()
+        {
+            var c=document.getElementById("a");
+            c.src="ballon.jpg"
+        }
+        function cake()
+        {
+            var d=document.getElementById("b");
+            d.src="cake2.jpg"
+            
+        }
+       
+    </script>
+</body>
+</html>

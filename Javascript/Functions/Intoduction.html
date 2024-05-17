@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n"><br>
+    <span id="f"></span>
+    <button type="button" onclick="fun1()">Click me</button><br>
+    <script>
+    //without parameters
+    fun()
+    function fun(){
+        document.write("Executing the function"+'<br>')
+    }
+    function fun1(){
+        let g=document.getElementById("n").value;
+       document.write(g);
+    }
+    //with parameters
+    fun2(2,3)
+    function fun2(arg1,arg2){
+        document.write(arg1*arg2+'<br>')
+    }
+    //default values
+    fun5(20,30,50)
+    function fun5(a=1,b=3){
+        document.write(a+b+'<br>')
+    }
+    //arrow function
+    const fun9=(a,b)=>{
+        document.write("Arrow function :"+a/b +'<br>');
+    }
+    fun9(200,100)
+    //task
+    const fun10=(a,b)=>{
+        document.write(a+" "+b +'<br>')
+    }
+    fun10( "Hari","Kiran")
+    //boolean and number
+    const fun11=(a,b)=>{
+        document.write(a+b +'<br>')
+    }
+    fun11(true,true)
+    fun11(true,"true")
+    fun11("false",1)
+    fun11("false","true")
+    //seconds
+    setTimeout(test,3000)
+    function test(){
+        document.write("After 3 seconds")
+    }
+    </script>
+</body>
+</html>

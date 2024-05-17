@@ -1,0 +1,33 @@
+<hmtl>
+    <head>
+        <title>Transition in CSS</title>
+        <style>
+            #a
+            {
+                width: 200px;
+                height: 200px;
+                background: yellow;
+                /* transition: width 2s;
+                transition:all 3s; */ it is applied to all the properties
+                /* transition: width 1s ease 2s; */ it is the shord hand property (transition: property transition-duration transition-timing-function transition delay;)
+                transition-property: background-color;
+                transition-duration: 3s;
+                transition-delay: 2s;
+                transition-timing-function: ease-out;
+
+            }
+            #a:hover
+            {
+                /* width: 300px; */
+                 background-color: purple;
+                /* border-radius: 150px;
+                margin-top: 30px;  */
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>Transition in HTML</h1></center>
+        <hr>
+        <div id="a"></div>
+    </body>
+</hmtl>

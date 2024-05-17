@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every() method</title>
+</head>
+<body>
+    <h1>Every method</h1>
+    <script>
+        let marks=[55,60,65,25,80];
+        let result=marks.every((ele,i)=>
+        {
+            return ele>35;
+        })
+        console.log(result)
+
+        let b=marks.every(function(ele,i)
+        {
+            return ele<35;
+        })
+        console.log(b)
+
+        let c=marks.every(check)
+        function check(ele,i)
+        {
+            return ele>20;
+        }
+        console.log(c)
+    </script>
+</body>
+</html>

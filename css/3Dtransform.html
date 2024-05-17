@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Transform properties in HTML</title>
+        <style>
+            #one
+            {
+                width: 200px;
+                height: 200px;
+                background-color: bisque;
+                float: left;
+                margin-left: 10px;
+            }
+            #one:hover
+            {
+                transform: translate3d(40px,50px,30px);
+            }
+          #two
+              {
+                width: 200px;
+                height: 200px;
+                background-color: violet;
+                float: left;
+                margin-left: 10px;
+            }
+            #two:hover
+            {
+                transform: translateZ(40px);
+            }
+           
+            #four
+              {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                float: left;
+                margin-left: 10px;
+            }
+            #four1
+              {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                float: left;
+                margin-left: 10px;
+            }
+           
+            #four:hover
+            {
+                /* clockwise direction  */
+                transform:rotate3d(60deg);
+                /* anti clock wise direction */
+                /* transform: rotate(-60deg); */
+            }
+            #four1:hover
+            {
+                transform: rotateZ(90deg);
+            }
+           
+            #five
+            {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                float: left;
+                margin-left: 10px;
+            }
+            #five:hover{
+                transform: scale3d(2);
+                /* transform:scale(2,3) */
+            }
+            #five1
+            {
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            #five1:hover{
+                transform: scaleZ(2);
+            }
+           
+          
+            #seven
+            {
+                width: 200px;
+                height: 200px;
+                background-color: palevioletred;
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            #seven:hover{
+                transform: matrix(1,-0.3,0,2,0,0);
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="one">
+            <p>translate3d()</p>
+        </div>
+        <div id="two">
+            <p>translateZ()</p>
+        </div> 
+        
+        <div id="four">
+            <p>rotate3d()</p>
+        </div>
+        <div id="four1">
+            <p>rotateZ()</p>
+        </div>
+        
+        <div id="five">
+            <p>scale3d()</p>
+        </div>
+        <div id="five1">
+            <p>scaleZ()</p>
+        </div>
+        <div id="seven">
+            <p>matrix()</p>
+        </div>
+           <!-- matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) -->
+    </body>
+</html>

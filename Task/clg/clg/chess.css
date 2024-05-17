@@ -1,0 +1,31 @@
+.a{
+    height:50px;
+    width:50px;
+    background-color:palegreen; 
+}
+.b{
+    height:50px;
+    width:50px;
+    background-color:white;
+}
+*
+{
+    margin:0px; 
+    /* border:0px; */
+    /* box-sizing: border-box; */
+
+}
+h2{
+    text-shadow:3px 3px 4px green ;
+}
+
+div{
+    height: 470px;
+    width: 500px;
+    border:1px solid green;
+
+}
+img{
+    height:50px;
+    width:50px;
+}

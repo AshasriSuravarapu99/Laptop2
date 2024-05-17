@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Z-index</title>
+        <style>
+            .a
+            {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                float: left;
+                position: absolute;
+                left:50px;
+                top:40px;
+                z-index: 3;
+            }
+            .b
+            {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                float: left;
+                position: absolute;
+                top:30px;
+                left:60px;
+                z-index: 2;
+            }
+            .c
+            {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                float: left;
+                position: absolute;
+                left:40px;
+                top:50px;
+                z-index: 1;
+
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>z-index in CSS</h1></center>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </body>
+</html>

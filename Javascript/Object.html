@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in js</title>
+</head>
+<body>
+       <script>
+          let a= {
+              name : 'Ashasri',
+              id:55,
+              college:'Aditya'
+          }
+           console.log(a);
+           console.log(a.name)//dot notation
+           console.log(a["college"]) //array notation
+           a.college='Aditya Polytechnic';
+           console.log(a.college)
+           console.log(a)
+           a.village='Dwarapudi';
+           console.log(a);
+           console.log( 'village' in a) // checking wether the value is in the object
+           delete a.village // deleting the value
+           console.log(a);
+       </script>
+</body>
+</html>

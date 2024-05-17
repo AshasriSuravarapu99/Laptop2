@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>unshift</li>
+        <li>shift</li>
+        <li>concat</li>
+        <li>slice</li>
+        <li>splice</li>
+        <li>indexOf</li>
+        <li>sort</li>
+    </ul>
+    <script>
+        var courses=["html",'css',"bootstrap"];
+        console.log(courses);
+        // push is used to add element at the end of the array
+        courses.push("javascript");
+        console.log(courses);
+        // pop removes the element at the end of the array
+        courses.pop();
+        console.log(courses);
+        // unshift is used to add element at the starting of the array
+        courses.unshift("react");
+        console.log(courses)
+        //shift is used to remove elements at the starting of the array
+        courses.shift()
+        console.log(courses)
+
+        var fruits=["apple","bannana","grapes","guava"];
+        var vegetables=["potato","carrot","tomato"];
+        //concat is used to add to arrays
+        var combined=fruits.concat(vegetables);
+        console.log(combined);
+        //slice is used to extract the section of the array
+        var subarr=combined.slice(1,5);
+        console.log(subarr);
+        //splice is used to add, remove and replace the elements in the array
+        var subarray=combined.splice(3,3,"watermelon","ladiesfinger","orange");
+        console.log(subarray)
+        console.log(combined)
+        // indexOf is used to find the index of the element in the array
+        var index=combined.indexOf("watermelon");
+        console.log(index)
+        // sort is used to sort the elements 
+        combined.sort()
+        console.log(combined)
+        
+
+    </script>
+</body>
+</html>

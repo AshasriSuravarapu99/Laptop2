@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    Enter name:<input type="text" name="" id="b" onkeyup="get(this.value)"k>
+    <p id="a"></p>
+    <p id="c"></p>
+    
+    <script>
+        function get(value)
+        {
+            if(value.length<3)
+            {
+                document.getElementById("a").innerText="please characters more than 3";
+                document.getElementById("a").style.color="red";
+                document.getElementById("b").style.outlineColor="red";
+                   
+            }
+            else
+            {
+                document.getElementById("a").innerText="";
+                document.getElementById("b").style.outlineColor="black";
+                    
+            }
+             document.getElementById("c").innerText="length="+value.length;
+ 
+        }
+        // var len=document.getElementById("b").innerText;
+        // document.getElementById("c").innerText="length="+len;
+
+    </script>
+</body>
+</html>

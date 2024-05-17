@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h1>Bye</h1>
+    <p id="a">Hello</p>
+    <p id="a">Hii</p>
+    <p class="new">Hey</p>
+    <p class="new">Good</p>
+    <div>A div element</div>
+    <a id="anchor">Click here</a>
+
+    <script>
+        const s=document.querySelectorAll("#a,.new,h1,div");
+        console.log(s);
+        // s[0].style.backgroundColor="Orange";
+        // s[1].style.backgroundColor="blue";
+        // s[2].style.backgroundColor="green";
+        // s[3].style.backgroundColor="aqua";
+        for (let i=0;i<s.length;i++)
+         {
+            s[i].style.backgroundColor="violet";
+         } 
+        s[6].style.backgroundColor="aqua";
+   
+        //setAttribute
+        const myanchor=document.getElementById("anchor");
+        myanchor.setAttribute("href","https://youtube.com");
+        myanchor.setAttribute("target","_blank");
+        
+    </script>
+</body>
+</html>

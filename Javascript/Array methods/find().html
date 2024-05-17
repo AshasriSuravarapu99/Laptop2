@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find() method</title>
+</head>
+<body>
+    <h1>Find method</h1>
+    <p>Find method returns the value if condition is satisfied and exit from the iteration loop</p>
+    <p>The find() method returns undefined if no elements are found</p>
+    <script>
+        //arrow function
+        let a=["html","css","bootstrap","js"];
+        console.log(a)
+        let course=a.find((ele,i)=>
+        {
+            return ele.endsWith('s');
+        })
+        console.log(course);
+
+        //anonymus function
+        let b=a.find(function(ele,i)
+        {
+            return ele.startsWith('s');
+        })
+        console.log(b);
+
+        //normal function
+        let c=a.find(element);
+        function element(ele,i)
+        {
+            return ele.startsWith('j');
+        }
+        console.log(c)
+    </script>
+</body>
+</html>

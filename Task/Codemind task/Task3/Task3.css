@@ -1,0 +1,73 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.parent
+{
+    width: 100%;
+    height: 400px;
+     background-color: rgb(255, 246, 246); 
+    margin-top: 160px;
+    padding-top: 10px;
+    padding-left: 250px;
+}
+.child
+{
+    width: 300px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+    background-color: white;
+    border-radius: 30px;
+
+}
+.a{
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    margin-top: 30px;
+}
+#b
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+}
+#b1
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+}
+#b2
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+}
+h3{
+    margin-top: 20px;
+}
+p{
+    color: grey;
+    margin-top: 25px;
+    
+}
+.line
+{
+    width: 280px;
+    height: 1px;
+    background-color:blue;
+    margin-top: 20px;
+}
+button
+{
+    background-color: blue;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 100px;
+    margin-top: 30px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter color:<input type="text" name="" onkeyup="get(this.value)">
+    <!-- Enter color:<input type="text" name="" onkeyup="getcolor()">  -->
+    <p id="a"></p>
+    <script>
+        function get(value)
+        {
+            
+            document.getElementById("a").innerText=value;
+            document.body.style.background=value;
+        }
+    </script>
+</body>
+</html>

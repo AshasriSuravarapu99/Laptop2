@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map function</title>
+</head>
+<body>
+     <h1> Map function</h1>
+     <p>Map function is used to create a new array with existing array</p>
+     <p>Syntax: map(function functionname(ele,index,arr))</p>
+     <p> Map function has mainly three arguments </p>
+     <p>ele: it stores the element of the array</p>
+     <p>index: it stores the index of the element</p>
+     <p>arr: It stores the given array</p>
+     <script>
+        let birthyear=[1998,2000,2004,2005,2010];
+        console.log(birthyear)
+        //anonymus function
+        let ages=birthyear.map(function(ele,index,arr){
+              console.log(index)
+              console.log(arr);
+              let age=2024-ele;
+              return "current age is "+age
+        })
+        console.log(ages);
+        console.table(birthyear)//old array
+        console.table(ages)//new array
+
+
+        //normal function
+        let a=[1,2,3,4,5]
+        let sqr=a.map(square)
+        function square(ele,index,arr)
+        {
+            let s=ele*ele;
+            return s;
+        }
+        console.log(a)
+        console.log(sqr)
+
+
+        //arrow function
+        let b=[1,2,3,4,5]
+        let c=b.map((ele,index,arr)=>
+        {
+            let d=ele+2;
+            return d;
+        }
+        )
+        console.log(b);
+        console.log(c);
+     </script>
+</body>
+</html>

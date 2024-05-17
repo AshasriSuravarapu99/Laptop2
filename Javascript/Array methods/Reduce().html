@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce method</title>
+</head>
+<body>
+    <h1>Reduce method</h1>
+    <p>Syntax: arr.reduce(function(accumalator,ele,index,arr))</p>
+    <script>
+        let a=[1,2,3,4,5]
+        console.log(a)
+        //arrow function
+        let b=a.reduce((acc,ele)=>
+        {
+            return acc+ele;
+        },0
+        )
+        console.log("sum")
+        console.log(b);
+
+        //greatest number 
+        //anonymus function
+        let g=a.reduce(function(acc,ele,i)
+        {
+            if(acc>ele)
+            {
+                return acc;
+            }
+            else{
+                return ele;
+            }
+        },a[0]);
+        console.log("Greatest number is")
+        console.log(g)
+
+        //named function
+        let s=a.reduce(small,a[0])
+        function small(acc,ele,i)
+        {
+            if(acc<ele)
+            {
+                return acc;
+            }
+            else
+            {
+                return ele;
+            }
+        }
+        console.log("Smallest number")
+        console.log(s)
+    </script>
+</body>
+</html>

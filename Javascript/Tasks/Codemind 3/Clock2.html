@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        .main{
+            background-color: aliceblue;
+            padding-top: 100px;
+        }
+        .main-body{
+            height: 500px;
+            width: 500px;
+            border-radius: 250px;
+            background-color: white; 
+        }
+        .main-body2{
+            height: 50px;
+            width: 50px;
+            border-radius: 500px;
+            background-color: antiquewhite;
+            position: relative;
+            top: 50px;
+            
+            
+            padding: 180px;
+        }
+        #stick-1{
+            height: 10px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: black;
+            position: relative;
+            right: 120px;
+            bottom: 50px;
+            transform: rotate(50deg);
+             
+        }
+        #stick-2{
+            height: 10px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: lightslategrey; 
+            
+        }
+        #stick-3{
+            height: 10px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: lightslategrey; 
+            top: 100px;
+        }
+    </style>
+</head>
+<body class="main">
+    <center><div class="main-body">
+        <div class="main-body2">
+            <div id="stick-1"></div>
+                <div id="stick-2"></div>
+                    <div id="stick-3"></div>
+                
+            
+        </div>
+    </div></center>
+    <script>
+        var hourhand = document.getElementById('stick-1')
+        var midhand = document.getElementById('stick-2')
+        var thihand = document.getElementById('stick-3')
+        function showTime() {
+        var date = new Date();
+        var hours = date.getHours();
+        console.log(hours)
+        hourhand.style.transform =rotate(${hours}deg)
+        var minutes = date.getMinutes();
+        console.log(minutes)
+        midhand.style.transform = rotate(${minutes}deg)
+        var seconds = date.getSeconds();
+        console.log(seconds)
+        thihand.style.transform = rotate(${seconds}deg)
+        }
+
+    setInterval(showTime, 1000); // Update the clock every second
+    showTime()
+
+    </script> 
+
+    
+</body>
+</html>

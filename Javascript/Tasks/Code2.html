@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let str = 'Hii Hello';
+        let str1='Welcome';
+        let str2='    Hello world    '
+        let num=12345
+        let b="Asha&sri"
+        let a=["car","bike","cycle"]
+
+        function strmethods(str){
+            document.write('<b>'+str+'</b><br>');
+        }
+
+        //.substr()
+        strmethods('Substr  = '+str.substr(0,4));
+
+        //.substring()
+        strmethods('Substring  = '+str.substring(1,6));
+
+        //.replace()
+        strmethods('Replace = '+str.replace('Hello','all'));
+
+        //.search()
+        strmethods('Search = '+str.search("Hello"));
+
+        //.toLocaleLowerCase()
+        strmethods('Lowercase  = '+str.toLocaleLowerCase());
+
+        //.toLocaleUpperCase()
+        strmethods('Uppercase  = '+str.toLocaleUpperCase());
+
+        //.index()
+        strmethods('Index of  = '+str.indexOf('i'));
+
+        //.includes()
+        strmethods('Includes = '+str.includes('Hii'));
+
+        //.slice()
+        strmethods('Slice = '+str.slice(6,10));
+        strmethods('Slice  using negative index = '+str.slice(-4,-2));
+
+        //.concat()
+        strmethods('Concatenation  = '+str.concat(str1));
+
+        //.lastIndexOf()
+        strmethods('Last Index of  = '+str1.lastIndexOf('e'));
+
+        //.charChodeAt()
+        strmethods('charCodeAt  = '+str.charCodeAt('e'));
+
+        //.trim()
+        strmethods('Trim = '+str2.trim());
+
+        //.charAt()
+        strmethods('Char At  = '+str.charAt(2));
+
+        //.valueOf()
+        strmethods('ValueOf  = '+a.valueOf());
+
+        //.split()
+       
+        strmethods('Split  = '+b.split("&"));
+
+        //.toString()
+        strmethods('Convert  to str  = '+num.toString());
+
+        //.match()  
+        strmethods('match  = '+str.match("Hii"));       
+    </script>
+</body>
+</html>

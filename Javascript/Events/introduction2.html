@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd way</title>
+</head>
+<body>
+    <button id="but">Click</button>
+    <button id="but2">Click</button>
+    <script>
+        //direct function calling
+        var a=document.getElementById("but");
+        a.onclick = change;
+        function change()
+        {
+            document.body.style.background="blue";
+        }
+
+        // anonymus function calling
+        var b=document.getElementById("but2");
+        b.onclick=function()
+        {
+            document.body.style.background="violet";
+        }
+
+    </script>
+</body>
+</html>

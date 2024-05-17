@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="a">Hello</h1>
+    <h2>Hii</h2>
+    <h2>Hey</h2>
+    <p class="p">All</p>
+    <p class="p">Good morning</p>
+    <p class="b">paragraph</p>
+    <p class="head">Abcd</p>
+    <p class="head">efgh</p>
+    <p id="all">Light</p>
+    <p id="all">Dark</p>
+        <script>
+        //entire document structure
+        console.log(document)
+        //by using id
+        const ById=document.getElementById('a');
+        console.log(ById)
+        ById.style.color="red";
+        ById.style.fontSize='100px';
+                                                   
+        //by using class
+        const ClsId = document.getElementsByClassName('p')
+        console.log(ClsId)
+        ClsId[1].style.color="Blue";
+
+        //by using Tag name
+        const Tag=document.getElementsByTagName('h2')
+        console.log(Tag)
+        Tag[0].style.color="green";
+
+        //by using query selector (#id,.class,tag)
+        // const f=document.querySelector("p");
+        // console.log(f);
+        document.querySelector("p").style.backgroundColor="violet";//it selects first one only
+        document.querySelector("#a").style.backgroundColor="pink";
+        document.querySelector(".b").style.backgroundColor="purple";
+
+        //by using query selector all
+        //by using id 
+        const d=document.querySelectorAll("#all");
+        console.log(d);
+        d[0].style.backgroundColor="blue";
+        d[1].style.backgroundColor="yellow";
+        //by using class name
+        const e=document.querySelectorAll(".head");
+        console.log(e);
+        e[0].style.backgroundColor="blue";
+        e[1].style.backgroundColor="yellow";
+        
+
+
+
+    </script>
+</body>
+</html>

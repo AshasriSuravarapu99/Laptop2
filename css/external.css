@@ -1,0 +1,64 @@
+/* class selector */
+.external
+{
+    font-size: 25px;
+    font-style: italic;
+    border: 5px solid pink;
+    background-color:black;
+    color:lightseagreen;
+    border-radius: 25px 10px;
+}
+/* id selector */
+#main
+{
+    font-size: 25px;
+    background-color: black;
+    color: lightblue;
+    border:5px solid pink;
+    font-style:italic;
+}
+/* Element selector */
+span
+{
+    font-size: 25px;
+    background-color: black;
+    color:aquamarine;
+}
+/* universal selector */
+*
+{
+    /* font-family:'Courier New', Courier, monospace; */
+    margin:5px;
+    padding:0px;
+}
+/* Attribute selector */
+input[type="text"]
+{
+    font-style:italic;
+    color:white;
+}
+input[type]
+{
+    background-color:navy;
+    color:white;
+}
+a[href]
+{
+    background-color: blanchedalmond;
+    color: black;
+}
+/* pseudo selector */
+a: link
+{
+    color:red;
+}
+a:visited
+{
+    color:purple;
+}
+a:hover{
+    font-size:25px;
+}
+a:active{
+    background-color: aqua;
+}

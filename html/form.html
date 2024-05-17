@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Form tag in HTML</title>
+    </head>
+    <body>
+        <center><h1>Form Elements in HTML</h1></center>
+        <form>
+            <lable >Enter firstname</lable>                                                                          
+            <input type="text"  disabled value="Ashasri" autocomplete="off"><br>                                     
+            <label>Enter mobile number</label>                                                                      
+            <input type="tel" maxlength="10" placeholder="Enter the phone number" autofocus required><br>            
+            <!-- or we can use this<input type="number"> -->                                                         
+            <label>Enter password</label>                                                                            
+            <input type="password"><br>                                                                              
+            <label>Enter email</label>                                                                               
+            <input type="email"  readonly><br>                                                                       
+            <lable >Gender:</lable><br>
+             Male<input type="radio" name="gender"><br>
+             Female<input type="radio" name="gender">
+             <br>
+             <lable>Select language:</lable><br>
+             C<input type="checkbox"><br>
+             C++<input type="checkbox"><br>
+             Python<input type="checkbox">
+             <br>
+             <lable>DOB</lable>
+             <input type="date"><br>
+             <lable>Upload a file</lable>
+             <input type="file"><br>
+             <lable>Select the college:</lable>
+             <select>
+                <option>AEC</option>
+                <option>ACET</option>
+                <option>ACOE</option>
+             </select><br>
+             <lable>Enter address: </lable><br>
+             <textarea></textarea><br>
+             <!-- <input type="color"><br> -->
+             <!-- <input type="range">
+             <input type="tel"> -->
+             <input type="submit">
+             <input type="reset">
+
+        </form>
+    </body>
+</html>
+<!-- Attributes:
+disabled-fixs the value (cannot edit)
+value-default value
+autocomplete off-stops suggestions
+required-mandatory field
+maxlength-maximum length of the field
+placeholder-
+autofocus-cursor starts from that field
+readonly -->

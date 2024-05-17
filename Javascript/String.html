@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods in js</title>
+</head>
+<body>
+    <h1> String methods in js</h1>
+    <script>
+        function string(str)
+        {
+            document.write("<br>"+str+"<br>");
+        }
+        let str1="Asha sri";
+        let str2="Swathi sri";
+        string("Original value: " +str1);
+        //length of the string
+        string(" Length of string:" +str1.length);
+        // to find out the value at particular position
+        string("Char At: " +str1.charAt(0));
+        string("Using At: "+str1.at(-1)) // in at() we use negative index which is not possible in charAt() method
+        //to find the index of the particular value in the string
+        string(" Index of s: "+str1.indexOf('s'));
+        // another way to find the index
+        string("Index of sri: "+str1.indexOf('sri'))
+        // to find the last index
+        string("Last index of s: "+str1.lastIndexOf('s'))
+        //string concat
+        string("Concat of strings : " +str1.concat(str2));
+        //multiple strings
+        string("Concat multiple: "+str1.concat(str2,str1))
+        // to lowercase
+        string("To lowercase: "+str1.toLowerCase());
+        // to uppercase
+        string("To Uppercase: "+str1.toUpperCase());
+        // trim is used to remove extra spaces
+        string(" Trim: "+str1.trim())  // trimStart(),trimEnd()
+        // starts with 
+        string("Starts with: "+str1.startsWith('A'));
+        // ends with
+        string("Ends with: "+str1.endsWith('s'));
+        //split
+         string("Split: "+str1.split(""));
+        console.log(str1.split(""))
+        let str3 = "Swathi_sri";
+        string("Split: "+str3.split("_"));
+        //slice
+        string("Slice: "+str1.slice(0,5))
+        string("Slice2: "+str1.slice(-4))
+       //subString()
+       string("subString(): "+str1.subString(1,5));
+       //subStr()
+       string("subStr(): "+str1.substr(0,4))
+       //repeat()
+       string("Repeat: "+str1.repeat(2))
+       //replace
+       string("Replace: "+str1.replace("sri","Swathi"))
+        
+    </script>
+</body>
+</html>

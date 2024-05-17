@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some() method</title>
+</head>
+<body>
+    <h1>Some() method</h1>
+    <p>It returns the boolean value if condition is satisfied then exit from the iteration loop</p>
+    <script>
+        let emails=["ashasri@gmail.com","swathisri@gmail.com","rambabu@gmail.com","devi@gmail.com"]
+        //arrow function
+        let email_check=emails.some((ele,i)=>
+        {
+            return ele=="swathisri@gmail.com";
+        })
+        console.log(email_check)
+
+        //anonymus function
+        let b=emails.some(function(ele,i)
+        {
+            return ele=="anasuya@gmail.com";
+        })
+        console.log(b)
+
+        //normal function
+        let c=emails.some(check)
+        function check(ele,i)
+        {
+            return ele=="rambabu@gmail.com";
+        }
+        console.log(c)
+    </script>
+</body>
+</html>

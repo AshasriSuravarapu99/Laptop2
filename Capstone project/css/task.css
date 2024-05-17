@@ -1,0 +1,403 @@
+*
+{
+    margin: 0px;
+    padding:0px;
+
+}
+.a{
+    width:97%;
+    height:100%;
+   
+    background-image: url('../images/students.jpg');
+    background-size: cover;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.a1
+{
+    color: white;
+    padding-top: 500px;
+    font-size: 50px;
+    margin-left: 100px;
+}
+.a2
+{
+    color: white;
+    padding-left: 100px;
+}
+.b
+{
+    width: 100%;
+    height:35%;
+    
+}
+.b1
+{
+    width:33.3%;
+    height:100%;
+    /* background-color: black; */
+    float: left;
+}
+.c1{
+    width:50px;
+    height:50px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+.c
+{
+    padding-left: 100px;
+}
+.d
+{
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 50px;
+    color: grey;
+}
+.e
+{
+    width:96%;
+    height:50%;
+    background: rgba(0,0, 0, 0.7) url('../images/classroom.jpg');
+    background-image: cover; 
+    background-size: cover; 
+    margin-left: 30px;
+    margin-right: 30px;
+    background-blend-mode: darken;
+}
+   
+.e1
+{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 80px;
+
+}
+.e2{
+    color:white;
+    padding-left: 80px;
+    padding-top:15px ;
+
+}
+/* .fp
+{
+    width:1050 ;
+    height:450;
+    background-color: blue;
+} */
+.f{
+    width: 350px;
+    height:450px;
+    float:left;
+    position: relative;
+    left:220px; 
+    bottom: 170px; 
+    /* top:1200px; */
+    margin-left: 20px; 
+    /* background-color: blue; */
+}
+.f1
+{
+    width:350px;
+    height:300px;
+}
+.f2
+{
+    width:350px;
+    height:150px;
+   
+}
+.f3
+{
+    padding-top: 20px;
+}
+.f4
+{
+    color: grey;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+ .g
+{
+    width:73%;
+    height:85%;
+    /* background-color: blue;  */
+    /* margin-top: 300px;  */
+     margin-left: 220px;  
+     /* padding-top:300px ;  */
+}
+.g1
+{
+    width:100%;
+    height:15%;
+    /* background-color: red; */
+    margin-top: 450px;
+    /* margin-left: 220px; */
+}
+/* .g2
+{
+    width:30%;
+    height: 100%;
+    background-color: blue; 
+    float: left;  
+} */ 
+.l
+{
+    width: 97%;
+    height: 100%;
+     /* background-color: rgb(233, 230, 227);;  */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.h
+{
+    color: grey;
+    padding-top: 15px;
+    /* padding-left:220px; */
+}
+.g2
+{
+    width:100%;
+    height:85%;
+    /* background-color: aliceblue; */
+}
+.g21
+{
+    width:50%;
+    height: 50%;
+    /* background-color: gold; */
+    float:left;
+}
+.g22
+{
+    width:40%;
+    height: 100%;
+    /* background-color: bisque; */
+    float: left;
+    /* outline: 2px solid black; */
+    /* padding: 10px; */
+}
+.g23
+{
+    width:60%;
+    height: 100%;
+    /* background-color:blue; */
+    /* outline: 2px solid black; */
+    float: left;
+    padding-top: 30px;
+    /* padding-left: 10px; */
+
+}
+.p
+{
+    padding-top: 30px;
+    
+    width:40%;
+    height: 90%;
+    /* background-color: bisque; */
+    float: left;
+    /* outline: 2px solid black; */
+
+}
+ .p1
+{
+    width:60%;
+    height:94%;
+    /* background-color:blue; */
+    /* outline: 2px solid black; */
+    float: left;
+    margin-top: 20px;
+
+}
+.q
+{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+}  
+.q1
+{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.q2{
+    color: grey;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.q3
+{
+    margin-left:20px;
+}
+.qq
+{
+   margin-top: 40px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+}  
+.r
+{
+    width: 97%;
+    height: 20%;
+    background-color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: rgba(0,0, 0, 0.7) url('../images/slate.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    padding-top: 50px;
+}
+.r1
+{
+    color: white;
+    margin-left: 330px;
+    /* margin-top: 100px; */
+    display: inline;
+    font-size: 60px;
+    /* margin-bottom: 20px; */
+}
+.r11
+{
+    color: white;
+    margin-left: 150px;
+    /* margin-top: 100px; */
+    display: inline;
+    font-size: 60px;
+    /* margin-bottom: 20px; */
+}
+
+.r2
+{
+    color: white;
+    margin-left: 330px;
+    display: inline;
+    /* margin-top: 20px; */
+}
+.r22
+{
+    color: white;
+    margin-left: 150px;
+    display: inline;
+    /* margin-top: 20px; */
+}
+.s
+{
+    width: 73%;
+    height: 15%;
+    /* background-color: yellow; */
+    margin-left: 220px;
+}
+.s1
+{
+    width: 33.3%;
+    height:100%;
+    /* background-color: green; */
+    /* outline: 1px solid white; */
+    float: left;
+}
+.s2
+{
+    width: 100%;
+    height: 30%;
+    /* background-color: violet; */
+}
+.s3
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}  
+.s4
+{
+    color: grey;
+    margin-left: 10px;
+    font-size: 18px;
+} 
+.s5
+{
+   
+    width: 100%;
+    height: 35%;
+    /* background-color: violet; */
+    /* border-left: 2px solid black; */
+}
+.s6
+{
+    
+    color: grey;
+    margin-left: 10px;
+    font-size: 18px;
+    
+    border-left: 3px solid black;
+    margin-top: 70px;
+    /* padding-top: 10px; */
+
+
+}
+.t
+{
+    
+    color: grey;
+    font-size: 25px;
+    display: inline;
+    
+}
+.t1
+{
+    display: inline;
+    color: grey;
+    font-size: 30px;
+    /* margin-left: 20px; */
+}
+.t2
+{
+    margin-left: 100px;
+}
+.t3
+{
+    font-family: "Dancing Script";
+    color: grey;
+    font-size: 30px;
+    display: inline;
+    margin-left: 100px;
+}
+.t4
+{
+    display: inline;
+    font-family:"Alkatra";
+    color: grey;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.t5
+{
+    color: grey;
+    font-family: "Alegreya Sans";
+    display: inline;
+    font-size: 25px;
+}
+.t6
+{
+    
+    color: grey;
+    font-size: 25px;
+    display: inline;
+    font-family:'Almendra Sc';
+    
+}
+#u
+{
+    margin-left: 10px;
+}
+.v
+{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(233, 230, 227);
+    padding-top: 20px;
+}
